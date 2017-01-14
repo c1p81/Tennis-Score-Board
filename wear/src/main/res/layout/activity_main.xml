@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luca_innocenti.courtboard.MainActivity"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        app:layout_box="all"
+        android:id="@+id/fl">
+
+
+        <Button
+            android:text="00"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/button_left"
+            android:background="@drawable/round_button"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="00"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_button_1"
+
+            android:id="@+id/button_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/setleft_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/setright_txt"
+            android:textSize="24sp"
+             />
+
+        <TextView
+            android:text="Set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/SetRight"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/settxt"
+            android:textSize="18sp"
+            android:textColor="?android:attr/colorPressedHighlight" />
+
+        <TextView
+            android:text="Game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/gametxt"
+            android:textSize="18sp"
+            android:textColor="@color/green"/>
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/gameleft_txt"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/gameright_txt"
+            android:layout_alignRight="@+id/button_right"
+
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiebreaktxt"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_button_y"
+
+            android:id="@+id/service_right"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/button_left" />
+
+        <Button
+            android:text="00"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_button_y"
+            android:layout_margin="4dp"
+            android:id="@+id/service_left"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/button_right" />
+
+        <android.support.wearable.view.DismissOverlayView
+            android:id="@+id/dismiss_overlay"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+
+    </RelativeLayout>
+
+</android.support.wearable.view.BoxInsetLayout>
